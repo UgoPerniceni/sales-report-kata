@@ -14,7 +14,7 @@ public class Program {
         System.out.println("=== Sales Viewer ===");
         //extract the command name from the args
         String command = args.length > 0 ? args[0] : "unknown";
-        String file = args.length >= 2 ? args[1] : "Java/data/data.csv";
+        String file = args.length >= 2 ? args[1] : "src/main/java/data/data.csv";
         //read content of our data file
         //[2012-10-30] rui : actually it only works with this file, maybe it's a good idea to pass file //name as parameter to this app later?
         String[] dataContentString = new String[0];
