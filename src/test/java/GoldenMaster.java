@@ -37,6 +37,17 @@ public class GoldenMaster {
         testOutput("report", resultExpected);
     }
 
+    @Test
+    public void TestError() {
+        String resultExpected = "=== Sales Viewer ===\n" +
+                "[ERR] your command is not valid \n" +
+                "Help: \n" +
+                "    - [print]  : show the content of our commerce records in data.csv\n" +
+                "    - [report] : show a summary from data.csv records ";
+
+        testOutput("", resultExpected);
+    }
+
     public void testOutput(String arg, String resultExpected) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(baos);
@@ -45,7 +56,7 @@ public class GoldenMaster {
         System.setOut(ps);
 
         String[] args = {arg};
-        Program.main(args);
+        new Runner().execute(args);
 
         System.out.flush();
         System.setOut(old);
