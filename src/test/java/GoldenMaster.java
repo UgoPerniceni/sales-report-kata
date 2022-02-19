@@ -28,9 +28,9 @@ public class GoldenMaster {
                 "|                Number of sales |          5 |\n" +
                 "|              Number of clients |          3 |\n" +
                 "|               Total items sold |         11 |\n" +
-                "|             Total sales amount |    1441,84 |\n" +
-                "|            Average amount/sale |     288.37 |\n" +
-                "|             Average item price |     131.08 |\n" +
+                "|             Total sales amount |   $1441,84 |\n" +
+                "|            Average amount/sale |    $288.37 |\n" +
+                "|             Average item price |    $131.08 |\n" +
                 "+---------------------------------------------+\n" +
                 "\n";
 
@@ -49,6 +49,8 @@ public class GoldenMaster {
 
         System.out.flush();
         System.setOut(old);
+
+        System.out.println(baos);
 
         assert(resultExpected.trim().equals(baos.toString().trim()));
     }
