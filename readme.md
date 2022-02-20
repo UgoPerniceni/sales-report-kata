@@ -15,6 +15,21 @@ _(disclaimer : obviously if you have a simple app like that, that fits your need
 - how should you test it ?
 - start refactoring & add tests
 
+## What have we done ?
+
+0. Translate code from C# to Java
+1. Create a GoldenMaster in order to test the functional code
+2. Rename the variables (some of them was already well named)
+3. Extract some methods to avoid nesting levels in IF or FOR blocks
+4. Add some tests for these new methods
+5. Extract the core code from the main method
+
+## What haven't we done that we should have ?
+
+1. Test all methods
+2. Extract some more methods
+3. Implements design patterns
+4. 
 
 ## Code
 
