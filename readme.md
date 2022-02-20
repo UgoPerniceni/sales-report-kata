@@ -29,7 +29,6 @@ _(disclaimer : obviously if you have a simple app like that, that fits your need
 1. Test all methods
 2. Extract some more methods
 3. Implements design patterns
-4. 
 
 ## Code
 
